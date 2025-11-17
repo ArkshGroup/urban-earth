@@ -6,6 +6,7 @@ import '../../global.css'
 import { Toaster } from '@/components/ui/sonner'
 import { siteConfig } from '@/config/seo.config'
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: 'Urban Earth | Premium Flooring, Tiles, Carpets & Interior Solutions in Nepal',
   description:
     'Discover the best flooring, tiles, carpets, marbles and interior surface solutions in Nepal. Urban Earth offers premium-quality materials for homes, offices, hotels and commercial spaces with modern designs and durable finishes.',

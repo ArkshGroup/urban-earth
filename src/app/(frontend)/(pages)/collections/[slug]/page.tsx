@@ -29,6 +29,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
   const { productDetails } = res
   return {
+    metadataBase: new URL(siteConfig.url),
+
     title: `${productDetails.metaTitle || productDetails.name} | Urban Earth - Flooring, Rugs & Mats Nepal`,
     description: productDetails.metaDescription || productDetails.shortDescription,
     openGraph: {

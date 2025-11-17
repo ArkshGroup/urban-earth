@@ -8,6 +8,8 @@ import { AuroraText } from '@/components/animation/aural-text'
 import Gallery from '../../_components/gallery/gallery-grid'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+
   title: 'Gallery | Urban Earth - Flooring, Rugs & Mats Nepal',
   description:
     'Explore the gallery of Urban Earth to see our premium flooring, rugs, mats, and vinyl designs available in Nepal. Perfect solutions for homes, offices, and commercial spaces.',

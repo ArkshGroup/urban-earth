@@ -5,63 +5,71 @@ export const siteConfig = {
   name: 'Nirvana Physiotherapy and Wellness Center',
   description:
     'Official website of Nirvana Physiotherapy and Wellness Center in Kathmandu, Nepal. We offer holistic treatments including physiotherapy, osteopathy, chiropractic, and Ayurvedic healing.',
-  url: process.env.NODE_ENV === 'production' ? 'https://www.npwc.com.np' : 'http://localhost:3000',
+  url:
+    process.env.NODE_ENV === 'production'
+      ? 'https://www.urbanearth.com.np'
+      : 'http://localhost:3000',
   twitterTitle: 'Nirvana Physiotherapy & Wellness | Official Website',
   twitterDescription:
     'Your guide to holistic health and wellness in Nepal. Specializing in back pain, spinal alignment, manual therapy, and more.',
 }
-
 export const webPageSchemaOrg: WithContext<WebPage> = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Nirvana Physiotherapy and Wellness Center',
+  name: 'Urban Earth | Flooring, Tiles, Carpets & Interior Materials in Nepal',
   description:
-    'Nirvana Physiotherapy, Wellness Center Kathmandu, Nepal, Bhaktapur, Physiotherapy, Chiropractic Care, Osteopathy, Ayurvedic Healing, Back Pain Relief',
+    'Urban Earth is a leading flooring, tiles, carpets, vinyl, laminate, and marble supplier in Nepal. Explore premium interior materials for homes, offices, hotels, and commercial spaces.',
   url: siteConfig.url,
+
   image: {
     '@type': 'ImageObject',
-    url: `${siteConfig.url}/opengraph-image.jpeg`, // Placeholder - Replace with actual image URL
-    caption: 'Nirvana Physiotherapy and Wellness Center',
+    url: `${siteConfig.url}/opengraph-image.jpeg`, // replace when the final OG image exists
+    caption: 'Urban Earth Nepal - Premium Flooring and Tiles Supplier',
   },
+
   author: {
     '@type': 'Organization',
-    name: 'Nirvana Physiotherapy and Wellness Center',
+    name: 'Urban Earth Nepal',
     url: siteConfig.url,
   },
+
   publisher: {
     '@type': 'Organization',
-    name: 'Nirvana Physiotherapy and Wellness Center',
+    name: 'Urban Earth Nepal',
     logo: {
       '@type': 'ImageObject',
-      url: `${siteConfig.url}/logo.webp`, // Placeholder - Replace with actual logo URL
+      url: `${siteConfig.url}/logo.webp`, // replace with actual logo path
       width: '300',
       height: '90',
     },
   },
+
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': siteConfig.url,
   },
+
   about: {
     '@type': 'Thing',
     name: [
-      'Nirvana Physiotherapy',
-      'Wellness Center Nepal',
-      'Wellness Center Kathmandu',
-      'Wellness Center Bhaktapur',
-      'Chiropractic',
-      'Osteopathy',
-      'Ayurvedic Healing',
-      'Back Pain',
-      'Spinal Alignment',
-      'Manual Therapy',
-      'Naturopathy',
-      'Kathmandu',
-      'Bhaktapur',
+      'Urban Earth Nepal',
+      'Flooring materials Nepal',
+      'Tiles supplier Kathmandu',
+      'Carpet showroom Nepal',
+      'Vinyl flooring Nepal',
+      'Laminate flooring Nepal',
+      'Marble & granite Nepal',
+      'Interior design materials Nepal',
+      'Wooden flooring Nepal',
+      'Commercial flooring Nepal',
+      'Home renovation Nepal',
+      'Interior showroom Kathmandu',
+      'Flooring brand Nepal',
     ],
   },
+
   keywords:
-    'Nirvana Physiotherapy, Wellness Center, Kathmandu, Bhaktapur, Nepal, Physiotherapy, Chiropractic, Osteopathy, Ayurveda, Back Pain, Holistic Health, Wellness, Spinal Care',
+    'Urban Earth Nepal, flooring Nepal, tiles Nepal, carpets Nepal, marble Nepal, granite Nepal, vinyl flooring, laminate flooring, wooden flooring, interior materials Kathmandu, flooring showroom Nepal, home renovation Nepal',
 }
 export const webSiteBreadcrumbSchemaOrg: WithContext<BreadcrumbList> = {
   '@context': 'https://schema.org',

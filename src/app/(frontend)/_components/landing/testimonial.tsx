@@ -65,7 +65,7 @@ const Testimonials = ({ testimonials }: { testimonials: ClientTestimonial[] }) =
         <AuroraText>Customers</AuroraText>
       </h2>
       <p className="text-center  text-lg mt-4 mb-8 max-w-3xl mx-auto text-gray-600 dark:text-gray-400">
-        We are proud to serve a diverse and growing clientele. Their trust in our products and
+        We are proud to serve a diverse and growing client base. Their trust in our products and
         services is a testament to the quality and commitment we uphold. Read what they have to say
         about their experience below.
       </p>
@@ -83,7 +83,7 @@ const Testimonials = ({ testimonials }: { testimonials: ClientTestimonial[] }) =
             {testimonials.map((testimonial) => (
               <CarouselItem
                 key={testimonial.name}
-                className="flex  w-full  justify-center pl-0 md:basis-1/2 lg:basis-1/3"
+                className="flex  w-full justify-center pl-0 md:basis-1/2 lg:basis-1/3"
               >
                 <TestimonialCard {...testimonial} />
               </CarouselItem>
