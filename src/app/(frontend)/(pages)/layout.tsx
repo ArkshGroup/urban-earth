@@ -3,6 +3,7 @@ import Navbar from '@/app/(frontend)/_components/layout/navbar'
 import { Metadata } from 'next'
 import React from 'react'
 import '../../global.css'
+import { Toaster } from '@/components/ui/sonner'
 export const metadata: Metadata = {
   description: 'Buy Best Flooring materials for you house',
   title: 'Urban Earth',
@@ -32,6 +33,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
         <Navbar />
         <main className=" pt-20">{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   )

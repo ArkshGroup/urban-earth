@@ -31,15 +31,15 @@ const ExploreOurBlogsSection = async () => {
           {docs.map((doc) => (
             <Card
               key={doc.id}
-              className="p-6 shadow-none border-none bg-primary/10 group hover:shadow-xl transition-shadow duration-300"
+              className="p-6 shadow-none border border-primary bg-background group  shadow-primary duration-300"
             >
-              <div className="w-full aspect-5/3 relative rounded-t-xl overflow-hidden">
+              <div className="w-full aspect-5/3 relative overflow-hidden">
                 <Image
                   alt={(doc.featuredImage as Media).alt}
                   src={(doc.featuredImage as Media).url!}
                   title={doc.name}
                   fill
-                  className="object-cover rounded-t-xl"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, 500px"
                 />
               </div>

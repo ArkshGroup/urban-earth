@@ -73,6 +73,7 @@ export interface Config {
     blogs: Blog;
     faq: Faq;
     clientTestimonials: ClientTestimonial;
+    contact: Contact;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -86,6 +87,7 @@ export interface Config {
     blogs: BlogsSelect<false> | BlogsSelect<true>;
     faq: FaqSelect<false> | FaqSelect<true>;
     clientTestimonials: ClientTestimonialsSelect<false> | ClientTestimonialsSelect<true>;
+    contact: ContactSelect<false> | ContactSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -281,6 +283,18 @@ export interface ClientTestimonial {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contact".
+ */
+export interface Contact {
+  id: number;
+  email: string;
+  message?: string | null;
+  phone?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -326,6 +340,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'clientTestimonials';
         value: number | ClientTestimonial;
+      } | null)
+    | ({
+        relationTo: 'contact';
+        value: number | Contact;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -479,6 +497,17 @@ export interface ClientTestimonialsSelect<T extends boolean = true> {
   message?: T;
   image?: T;
   handle?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contact_select".
+ */
+export interface ContactSelect<T extends boolean = true> {
+  email?: T;
+  message?: T;
+  phone?: T;
   updatedAt?: T;
   createdAt?: T;
 }

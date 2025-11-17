@@ -4,23 +4,12 @@ import { motion } from 'motion/react'
 
 export function Footer() {
   const footerLinks = {
-    shop: [
-      { label: 'All Products', href: '#' },
-      { label: 'Collections', href: '#' },
-      { label: 'New Arrivals', href: '#' },
-    ],
+    shop: [{ label: 'Collections', href: '/collections' }],
     company: [
       { label: 'About Us', href: '#' },
-      { label: 'Careers', href: '#' },
-      { label: 'Blog', href: '#' },
-      { label: 'Sustainability', href: '#' },
+      { label: 'Blog', href: '/blog' },
     ],
-    support: [
-      { label: 'Contact Us', href: '#' },
-      { label: 'Help Center', href: '#' },
-      { label: 'Shipping Info', href: '#' },
-      { label: 'Returns', href: '#' },
-    ],
+    support: [{ label: 'Contact Us', href: '/contact' }],
   }
 
   return (

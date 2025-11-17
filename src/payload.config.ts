@@ -12,6 +12,7 @@ import { Blogs } from './collections/Blog'
 import { Gallery } from './collections/Gallery'
 import { Faq } from './collections/Faq'
 import { ClientTestimonials } from './collections/Testimonial'
+import { Contact } from './collections/Contact'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -23,7 +24,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Products, Blogs, Faq, ClientTestimonials],
+  collections: [Users, Media, Products, Blogs, Faq, ClientTestimonials, Contact],
   globals: [Gallery],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',

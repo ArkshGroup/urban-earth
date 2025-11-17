@@ -14,8 +14,7 @@ export const marketingNavigationMenu: NavItem[] = [
     name: 'ABOUT US',
     href: '/about-us',
     subItems: [
-      { name: 'NPWC', href: '/about-us' },
-      { name: 'Our Team', href: '/our-team' },
+      // { name: 'Urban Earth', href: '/our-team' },
       { name: 'Arksh Group', href: 'https://arkshgroup.com/' },
     ],
   },

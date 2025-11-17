@@ -3,8 +3,8 @@ import { seedProduct } from './seed-product'
 
 async function run() {
   try {
-    await seedMedia()
-    // await seedProduct()
+    // await seedMedia()
+    await seedProduct()
   } catch (error) {
     console.error(JSON.stringify(error))
     process.exit(1)
