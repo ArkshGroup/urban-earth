@@ -3,7 +3,7 @@ import React from 'react'
 
 export function GridBackgroundDemo() {
   return (
-    <div className="absolute top-0 bg-black flex h-full w-full items-center justify-center ">
+    <div className="absolute top-0 bg-primary/5 flex h-full w-full items-center justify-center ">
       <div
         className={cn(
           'absolute inset-0 opacity-20',

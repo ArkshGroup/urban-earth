@@ -46,7 +46,7 @@ export function TestimonialCard({ name, message, image, handle }: ClientTestimon
       <div className="flex items-center gap-3">
         <Avatar className="h-12 w-12">
           {image && <AvatarImage src={(image as Media).url!} alt={name} />}
-          <AvatarFallback className="   ">{name.charAt(0)}</AvatarFallback>
+          <AvatarFallback className=" bg-primary">{name.charAt(0)}</AvatarFallback>
         </Avatar>
         <div className="flex flex-col items-start">
           <h3 className="text-md font-semibold leading-none">{name}</h3>
@@ -69,10 +69,10 @@ const Testimonials = ({ testimonials }: { testimonials: ClientTestimonial[] }) =
         services is a testament to the quality and commitment we uphold. Read what they have to say
         about their experience below.
       </p>
-      <div className="pt-10 relative flex items-center justify-center  bg-primary/10 md:pt-16 lg:pt-20">
+      <div className="relative flex items-center justify-center  bg-primary/10 md:pt-16 lg:pt-20">
         <GridBackgroundDemo />
         <Carousel
-          className=" bg-primary/10 py-12 w-full"
+          className="  py-12 w-full"
           opts={{ loop: true }}
           plugins={[AutoScroll({ playOnInit: true })]}
         >
