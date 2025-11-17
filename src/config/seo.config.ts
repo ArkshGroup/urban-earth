@@ -20,10 +20,9 @@ export const webPageSchemaOrg: WithContext<WebPage> = {
   description:
     'Urban Earth is a leading flooring, tiles, carpets, vinyl, laminate, and marble supplier in Nepal. Explore premium interior materials for homes, offices, hotels, and commercial spaces.',
   url: siteConfig.url,
-
   image: {
     '@type': 'ImageObject',
-    url: `${siteConfig.url}/opengraph-image.jpeg`, // replace when the final OG image exists
+    url: `${siteConfig.url}/og-image.jpg`,
     caption: 'Urban Earth Nepal - Premium Flooring and Tiles Supplier',
   },
 
@@ -38,7 +37,7 @@ export const webPageSchemaOrg: WithContext<WebPage> = {
     name: 'Urban Earth Nepal',
     logo: {
       '@type': 'ImageObject',
-      url: `${siteConfig.url}/logo.webp`, // replace with actual logo path
+      url: `${siteConfig.url}/logo.webp`,
       width: '300',
       height: '90',
     },
@@ -89,51 +88,9 @@ export const webSiteBreadcrumbSchemaOrg: WithContext<BreadcrumbList> = {
     },
     {
       '@type': 'ListItem',
-      position: 3,
-      name: 'Physiotherapy Services',
-      item: `${siteConfig.url}/services/physiotherapy-service-in-kathmandu-and-bhaktapur`,
-    },
-    {
-      '@type': 'ListItem',
-      position: 4,
-      name: 'Osteopathy Services',
-      item: `${siteConfig.url}/services/osteopathy-service-in-kathmandu-and-bhaktapur`,
-    },
-    {
-      '@type': 'ListItem',
-      position: 5,
-      name: 'Chiropractic Services',
-      item: `${siteConfig.url}/services/chiropractic-service-in-kathmandu-and-bhaktapur`,
-    },
-    {
-      '@type': 'ListItem',
-      position: 6,
-      name: 'Ayurvedic Healing Services',
-      item: `${siteConfig.url}/services/ayurvedic-healing-service-in-kathmandu-and-bhaktapur`,
-    },
-    {
-      '@type': 'ListItem',
       position: 7,
       name: 'Contact Us',
-      item: `${siteConfig.url}/contact-us`,
-    },
-    {
-      '@type': 'ListItem',
-      position: 8,
-      name: 'BENEFITS',
-      item: `${siteConfig.url}/benefits`,
-    },
-    {
-      '@type': 'ListItem',
-      position: 9,
-      name: 'CONDITIONS TREATED',
-      item: `${siteConfig.url}/conditions-treated`,
-    },
-    {
-      '@type': 'ListItem',
-      position: 10,
-      name: 'MEMBERSHIP',
-      item: `${siteConfig.url}/membership`,
+      item: `${siteConfig.url}/contact`,
     },
     {
       '@type': 'ListItem',
@@ -146,12 +103,6 @@ export const webSiteBreadcrumbSchemaOrg: WithContext<BreadcrumbList> = {
       position: 12,
       name: 'GALLERY',
       item: `${siteConfig.url}/gallery`,
-    },
-    {
-      '@type': 'ListItem',
-      position: 13,
-      name: 'BOOK AN APPOINTMENT',
-      item: `${siteConfig.url}/book-an-appointment`,
     },
   ],
 }
