@@ -4,23 +4,62 @@ import { Metadata } from 'next'
 import React from 'react'
 import '../../global.css'
 import { Toaster } from '@/components/ui/sonner'
+import { siteConfig } from '@/config/seo.config'
 export const metadata: Metadata = {
-  description: 'Buy Best Flooring materials for you house',
-  title: 'Urban Earth',
+  title: 'Urban Earth | Premium Flooring, Tiles, Carpets & Interior Solutions in Nepal',
+  description:
+    'Discover the best flooring, tiles, carpets, marbles and interior surface solutions in Nepal. Urban Earth offers premium-quality materials for homes, offices, hotels and commercial spaces with modern designs and durable finishes.',
   robots: {
+    index: true,
     follow: true,
   },
-  creator: ' Arksh Group',
+  creator: 'Arksh Group',
+  authors: [{ name: 'Urban Earth Nepal' }, { name: 'Arksh Group' }],
   keywords: [
-    'Buy Flooring goods in Nepal',
-    'Textile company in Nepal',
-    'Marbles',
+    'Buy flooring materials in Nepal',
+    'Best tiles in Nepal',
+    'Carpet shop Nepal',
+    'Marbles and granite Nepal',
+    'Interior flooring Nepal',
     'Urban Earth Nepal',
-    'Urban Earth Flooring and tiles ',
-    'Marble Flooring in Nepal',
+    'Wooden flooring Nepal',
+    'Vinyl flooring Nepal',
+    'Laminate flooring Nepal',
+    'Luxury carpet Nepal',
+    'Premium tiles Kathmandu',
+    'Home renovation Nepal',
+    'Commercial flooring Nepal',
+    'Modern interior materials Nepal',
+    'Urban Earth flooring and tiles',
+    'Marble flooring in Nepal',
   ],
+  openGraph: {
+    title: 'Urban Earth | Premium Flooring, Tiles, Carpets & Marbles in Nepal',
+    description:
+      'Explore Urban Earth’s wide collection of high-quality flooring, tiles, carpets, marbles and interior design products in Nepal.',
+    url: siteConfig.url,
+    siteName: 'Urban Earth',
+    type: 'website',
+    locale: 'en_US',
+    images: [
+      {
+        url: siteConfig.url + '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Urban Earth Nepal - Best Flooring and Tiles Collection',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Urban Earth Nepal | Flooring, Tiles, Carpets & Interiors',
+    description:
+      'Urban Earth provides premium flooring, tiles, carpets and marble products in Nepal. Explore top-quality surface materials with elegant designs fit for every interior.',
+    images: [''], // Add image when available
+  },
+  category: 'Interior, Flooring, Tiles, Carpets',
   alternates: {
-    canonical: '',
+    canonical: siteConfig.url,
   },
 }
 

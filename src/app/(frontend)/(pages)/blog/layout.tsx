@@ -3,32 +3,33 @@ import React from 'react'
 import { siteConfig } from '@/config/seo.config'
 
 export const metadata: Metadata = {
-  title: 'Explore Our Latest Blog, Articles & News',
+  metadataBase: new URL(siteConfig.url),
+  title: 'Explore Our Latest Flooring Tips, Interior Trends & Product News',
   description:
-    'Read the latest articles, tips, and news from Nirvana. Stay updated on physiotherapy and  rehabilitation topics in Nepal.',
+    'Read the latest articles, guides, and news from Urban Earth. Stay updated on flooring trends, tiles and carpet tips, and interior design inspiration in Nepal.',
   keywords: [
-    'physiotherapy blog Nepal',
-    'rehabilitation articles',
-    'wellness tips Nepal',
-    'Nirvana Physiotherapy blog',
-    'health news Kathmandu',
-    'physiotherapy updates Bhaktapur',
-    'sports injury advice Nepal',
-    'back pain articles Nepal',
-    'wellness blog Bhaktapur',
+    'flooring blog Nepal',
+    'tiles articles Nepal',
+    'carpet tips Nepal',
+    'interior design blog Nepal',
+    'Urban Earth flooring news',
+    'vinyl flooring guide Nepal',
+    'home renovation Nepal',
+    'office flooring ideas Nepal',
+    'interior trends Kathmandu',
   ],
   openGraph: {
-    title: 'Blog | Nirvana Physiotherapy & Wellness Center',
+    title: 'Blog | Urban Earth – Flooring, Tiles & Carpet in Nepal',
     description:
-      'Explore our blog for expert advice, news, and tips on physiotherapy, rehabilitation, and wellness from Nirvana Physiotherapy & Wellness Center.',
+      'Explore our blog for expert advice, product updates, and design tips on flooring, tiles, carpets, and interior solutions by Urban Earth Nepal.',
     url: `${siteConfig.url}/blog`,
-    siteName: 'Nirvana Physiotherapy & Wellness Center',
+    siteName: 'Urban Earth',
     images: [
       {
-        url: '',
+        url: '', // add OG image URL when available
         width: 1200,
         height: 630,
-        alt: 'Nirvana Physiotherapy Blog Nepal',
+        alt: 'Urban Earth Flooring Blog Nepal',
       },
     ],
     locale: 'en_US',
@@ -36,10 +37,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog | Nirvana Physiotherapy & Wellness Center',
+    title: 'Blog | Urban Earth – Flooring, Tiles & Carpet in Nepal',
     description:
-      'Stay informed with the latest blog posts from Nirvana Physiotherapy & Wellness Center on physiotherapy, rehabilitation, and wellness in Nepal.',
-    images: [''],
+      'Stay informed with the latest articles and updates from Urban Earth, covering flooring tips, tile guides, carpet care, and interior trends in Nepal.',
+    images: [''], // add Twitter OG image when available
   },
   alternates: {
     canonical: `${siteConfig.url}/blog`,

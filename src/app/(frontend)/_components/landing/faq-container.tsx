@@ -276,9 +276,9 @@ const FAQ1 = ({ faqs }: { faqs: FAQItem[] }) => {
         <header className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div className="space-y-4">
             <p className={`text-xs uppercase tracking-[0.35em] ${palette.muted}`}>Questions</p>
-            <h1 className={`text-4xl font-semibold leading-tight md:text-5xl ${palette.heading}`}>
+            <h2 className={`text-4xl font-semibold leading-tight md:text-5xl ${palette.heading}`}>
               Transform your space, one floor at a time.
-            </h1>
+            </h2>
             <p className={`max-w-xl text-base ${palette.muted}`}>
               Discover expert tips, ideas, and inspiration for floors, rugs, and mats, curated for
               style and durability.

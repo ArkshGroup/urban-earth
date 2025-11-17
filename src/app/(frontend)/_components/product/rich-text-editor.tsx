@@ -1,5 +1,4 @@
-// src/components/RichText/index.tsx
-'use client' // If it's a client component in Next.js
+'use client'
 
 import { RichText as RichTextConverter } from '@payloadcms/richtext-lexical/react'
 import { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'

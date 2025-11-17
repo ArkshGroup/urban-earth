@@ -29,11 +29,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
   const { productDetails } = res
   return {
-    title: `${productDetails.name} | Urban Earth - Flooring, Rugs & Mats Nepal`,
-    description: productDetails.shortDescription,
+    title: `${productDetails.metaTitle || productDetails.name} | Urban Earth - Flooring, Rugs & Mats Nepal`,
+    description: productDetails.metaDescription || productDetails.shortDescription,
     openGraph: {
-      title: `${productDetails.name} | Urban Earth - Flooring, Rugs & Mats Nepal`,
-      description: productDetails.shortDescription,
+      title: `${productDetails.metaTitle || productDetails.name} | Urban Earth - Flooring, Rugs & Mats Nepal`,
+      description: productDetails.metaDescription || productDetails.shortDescription,
       url: `${siteConfig.url}/collections/${productDetails.slug}`,
       siteName: 'Urban Earth',
       images: [
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
               : '/default-og-image.jpg',
           width: 1200,
           height: 630,
-          alt: `Urban Earth Product - ${productDetails.name}`,
+          alt: `Urban Earth Product - ${productDetails.metaTitle || productDetails.name}`,
         },
       ],
       locale: 'en_US',
@@ -52,8 +52,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${productDetails.name} | Urban Earth - Flooring, Rugs & Mats Nepal`,
-      description: productDetails.shortDescription,
+      title: `${productDetails.metaTitle || productDetails.name} | Urban Earth - Flooring, Rugs & Mats Nepal`,
+      description: productDetails.metaDescription || productDetails.shortDescription,
       images: [
         productDetails.images && productDetails.images.length > 0
           ? productDetails.images[0]
@@ -76,9 +76,7 @@ const ProductRootPage = async ({ params }: { params: Promise<{ slug: string }> }
   const product = productDetails
   return (
     <>
-      <div className="">
-        <ProductDetailsContainer product={product} />
-      </div>
+      <ProductDetailsContainer product={product} />
     </>
   )
 }

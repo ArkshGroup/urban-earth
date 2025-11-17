@@ -69,7 +69,10 @@ const Testimonials = ({ testimonials }: { testimonials: ClientTestimonial[] }) =
         services is a testament to the quality and commitment we uphold. Read what they have to say
         about their experience below.
       </p>
-      <div className="relative flex items-center justify-center  bg-primary/10 md:pt-16 lg:pt-20">
+      <div
+        className="relative flex items-center justify-center  bg-primary/5  bg-linear-to-b from-white to-primary/10
+ md:pt-16 lg:pt-20"
+      >
         <GridBackgroundDemo />
         <Carousel
           className="  py-12 w-full"

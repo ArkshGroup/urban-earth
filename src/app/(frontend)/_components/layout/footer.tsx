@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
+import Link from 'next/link'
 
 export function Footer() {
   const footerLinks = {
@@ -93,24 +94,18 @@ export function Footer() {
         >
           <p className="text-sm text-foreground/60">© 2025 UrbanEarth. All rights reserved.</p>
           <div className="flex gap-6">
-            <a
-              href="#"
+            <Link
+              href="/privacy-policy"
               className="text-sm text-foreground/60 hover:text-foreground transition-colors"
             >
               Privacy Policy
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/terms"
               className="text-sm text-foreground/60 hover:text-foreground transition-colors"
             >
               Terms of Service
-            </a>
-            <a
-              href="#"
-              className="text-sm text-foreground/60 hover:text-foreground transition-colors"
-            >
-              Cookies
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

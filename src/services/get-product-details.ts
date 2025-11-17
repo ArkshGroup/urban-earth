@@ -34,6 +34,9 @@ export async function getProductDetails(slug: string) {
     thumbnailImage: string
     images?: string[]
     cataloguePDF?: string
+    metaTitle?: string
+    metaDescription?: string
+    metaKeywords?: string
   }
 
   const productDetails: IProductShowcase = {
@@ -46,6 +49,9 @@ export async function getProductDetails(slug: string) {
     images:
       product.images?.map((img) => (img.image ? ((img.image as Media).url as string) : '')) || [],
     cataloguePDF: product.cataloguePDF ? ((product.cataloguePDF as Media).url as string) : '',
+    metaTitle: product.metaTitle || '',
+    metaDescription: product.metaDescription || '',
+    metaKeywords: product.metaKeywords || '',
   }
 
   return { productDetails }

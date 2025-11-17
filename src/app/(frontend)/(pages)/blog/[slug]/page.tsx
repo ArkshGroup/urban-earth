@@ -11,7 +11,7 @@ import { Card, CardDescription, CardTitle } from '@/components/ui/card'
 import BlogContentWrapper from './blog-wrapper'
 import { generateBlogSchemaOrg, siteConfig } from '@/config/seo.config'
 import ShareButtons from '@/app/(frontend)/_components/blog/share-button'
-import { incrementBlogView } from '@/app/(frontend)/_mutation/blog_view.mutataion'
+import { incrementBlogView } from '@/app/(frontend)/_mutation/blog_view.mutation'
 
 const findBlogBySlug = async (slug: string) => {
   try {

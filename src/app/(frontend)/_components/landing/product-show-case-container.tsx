@@ -37,9 +37,9 @@ const ProductShowCaseContainer = ({
           viewport={{ once: true }}
           className=" mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-light text-foreground mb-4 text-balance">
+          <h2 className="text-5xl md:text-6xl font-light text-foreground mb-4 text-balance">
             Discover Timeless Designs
-          </h1>
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Explore our diverse range of curated products designed to elevate your space with style
             and functionality.
@@ -120,7 +120,7 @@ const ProductShowCaseContainer = ({
         {/* Other Collections - Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 overflow-hidden gap-8">
           {otherCollections.map((collection, index) => (
-            <ProductContainer {...collection} index={index} />
+            <ProductContainer key={collection.id} {...collection} index={index} />
           ))}
         </div>
       </div>
